@@ -1,0 +1,125 @@
+/* Estilo general sacado de gugol */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #d9ed92;
+    color: #184e77;
+}
+
+/* Encabezado fijo y ancho completo */
+.header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #34a0a4;
+    color: white;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    box-sizing: border-box;
+    z-index: 1000; /* Asegura que esta wea siempre esté encima */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    gap: 10px;
+    width: 420px;
+    height: 100px;
+}
+
+.logo img {
+    width: 70px;
+    height: 70px;
+    border-radius: 25%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border: 4px solid #99d98c;
+}
+
+/* Navegación */
+.navigation {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 20px;
+    justify-content: end;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #d9ed92;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #1a759f;
+    border: 1px solid #168aad;
+    transition: background-color 0.3s;
+}
+
+.navigation a:hover {
+    background-color: #1e6091;
+    color: #b5e48c;
+}
+
+/* la wea de la imagen de la udi */
+
+.titulo {
+    display: grid;
+    place-items: center; /* Centra la imagen tanto horizontal como verticalmente */
+    padding: 20px;
+    background-color: #b5e48c;
+    border-radius: 8px;
+    color: #1e6091;
+    width: calc(100% - 40px);
+    margin: 20px;
+    box-sizing: border-box;
+    margin-top: 160px;
+}
+
+.titulo img {
+    width: 100%; /* si está muy grande pos agregar max-width: 800px; */
+    height: auto; 
+    display: block; 
+}
+
+/* Aqui los articulos de acerca, imagenes y mas info */
+
+.acerca {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #b5e48c;
+    border-radius: 8px;
+    color: #1e6091;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+.acerca img{
+    width: auto;
+    height: 400px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border: 3px solid #76c893;
+    object-fit: contain;
+}
+
+/* Footer al final ocupando todo el ancho */
+footer {
+    width: 100%;
+    background-color: #168aad;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+}
